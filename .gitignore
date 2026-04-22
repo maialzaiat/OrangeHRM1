@@ -1,0 +1,7 @@
+# IDE / editor settings that may contain secrets
+.vscode/mcp.json
+
+# Environment variable files
+.env
+.env.local
+.env.*.local

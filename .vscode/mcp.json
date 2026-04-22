@@ -1,0 +1,13 @@
+{
+  "servers": {
+    "mcp-atlassian": {
+      "command": "uvx",
+      "args": ["mcp-atlassian"],
+      "env": {
+        "JIRA_URL": "https://malzaiat.atlassian.net",
+        "JIRA_USERNAME": "m.alzaiat@gmail.com",
+        "JIRA_API_TOKEN": "${JIRA_API_TOKEN}"
+      }
+    }
+  }
+}
