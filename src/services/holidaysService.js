@@ -10,6 +10,23 @@ export const HOLIDAY_TYPE = {
 
 export const ALL_LOCATIONS = "ALL_LOCATIONS";
 
+export const LOCATION_OPTIONS = [
+  { value: ALL_LOCATIONS, label: "All Locations" },
+  { value: "HQ", label: "Headquarters" },
+  { value: "BRANCH_A", label: "Branch A" },
+  { value: "BRANCH_B", label: "Branch B" },
+];
+
+const DAY_NAMES = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+
 // ---------------------------------------------------------------------------
 // Validation
 // ---------------------------------------------------------------------------
@@ -90,15 +107,6 @@ export function calculateLeaveDeduction(
   location,
   workingDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
 ) {
-  const DAY_NAMES = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
   const overlappingHolidays = getHolidaysInRange(
     holidays,
     startDate,

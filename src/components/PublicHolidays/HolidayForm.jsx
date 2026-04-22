@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { HOLIDAY_TYPE, ALL_LOCATIONS } from "../services/holidaysService";
-
-const LOCATION_OPTIONS = [
-  { value: ALL_LOCATIONS, label: "All Locations" },
-  { value: "HQ", label: "Headquarters" },
-  { value: "BRANCH_A", label: "Branch A" },
-  { value: "BRANCH_B", label: "Branch B" },
-];
+import {
+  HOLIDAY_TYPE,
+  ALL_LOCATIONS,
+  LOCATION_OPTIONS,
+} from "../../services/holidaysService";
 
 const DEFAULT_FORM = {
   name: "",

@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import { HOLIDAY_TYPE } from "../services/holidaysService";
+import { HOLIDAY_TYPE } from "../../services/holidaysService";
 
 const MONTH_NAMES = [
   "January",
