@@ -1,17 +1,10 @@
 import React, { useState } from "react";
-import { ALL_LOCATIONS } from "../../services/holidaysService";
+import { LOCATION_OPTIONS } from "../../services/holidaysService";
 import { useHolidays } from "../../hooks/useHolidays";
 import HolidayForm from "./HolidayForm";
 import HolidayList from "./HolidayList";
 import HolidayCalendar from "./HolidayCalendar";
 import "./PublicHolidayManager.css";
-
-const LOCATION_OPTIONS = [
-  { value: ALL_LOCATIONS, label: "All Locations" },
-  { value: "HQ", label: "Headquarters" },
-  { value: "BRANCH_A", label: "Branch A" },
-  { value: "BRANCH_B", label: "Branch B" },
-];
 
 const CURRENT_YEAR = new Date().getFullYear();
 const YEAR_OPTIONS = [CURRENT_YEAR - 1, CURRENT_YEAR, CURRENT_YEAR + 1];

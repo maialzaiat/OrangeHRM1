@@ -1,12 +1,9 @@
 import React from "react";
-import { HOLIDAY_TYPE, ALL_LOCATIONS } from "../services/holidaysService";
+import { HOLIDAY_TYPE, LOCATION_OPTIONS } from "../../services/holidaysService";
 
-const LOCATION_LABELS = {
-  [ALL_LOCATIONS]: "All Locations",
-  HQ: "Headquarters",
-  BRANCH_A: "Branch A",
-  BRANCH_B: "Branch B",
-};
+const LOCATION_LABELS = Object.fromEntries(
+  LOCATION_OPTIONS.map(({ value, label }) => [value, label]),
+);
 
 /**
  * DEV-118: Displays the list of public holidays with edit / delete actions.
